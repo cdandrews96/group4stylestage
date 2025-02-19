@@ -1,15 +1,25 @@
 header {
     text-align: center;
+    padding: 3%;
     .container {
-        margin: auto 5%;
+        border-bottom: 20px double black;
+        padding-bottom: 20px;
         h1 {
-            font-size: 50px;
+            font-size: 60px;
+            @include breakpoint(large) {
+                font-size: 100px;
+            }
+            
         }
         p {
             margin: 0%;
         }
+        a {
+            color: black;
+        }
+
         a:nth-child(4) {
-            // margin-top: 50px;
+            text-decoration: none;
             svg {
                 display: none;
             }

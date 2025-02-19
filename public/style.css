@@ -76,15 +76,28 @@ select {
 }
 header {
   text-align: center;
+  padding: 3%;
 }
 header .container {
-  margin: auto 5%;
+  border-bottom: 20px double black;
+  padding-bottom: 20px;
 }
 header .container h1 {
-  font-size: 50px;
+  font-size: 60px;
+}
+@media (min-width: 600px) {
+  header .container h1 {
+    font-size: 100px;
+  }
 }
 header .container p {
   margin: 0%;
+}
+header .container a {
+  color: black;
+}
+header .container a:nth-child(4) {
+  text-decoration: none;
 }
 header .container a:nth-child(4) svg {
   display: none;

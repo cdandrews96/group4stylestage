@@ -1,1 +1,7 @@
+$break-large: 600px;
 
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width: $break-large) { @content; }
+    }
+}
