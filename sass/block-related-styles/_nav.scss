@@ -1,1 +1,35 @@
+nav {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0px;
+        margin: 5px 15px;
+    
+        @include breakpoint(large) {
+            justify-content:center;
+            margin: 5px 2px;
+        }
+    
+        li {
+            background-color: $color-primary;
+            border-radius: $border-radius;
+            width: 100px;
+            padding: 10px;
+            margin: 5px 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        li:hover, a:hover {
+            background-color: $color-primary-alt;
+            color: $color-secondary;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $color-secondary-alt;
+        }
+    }
+}
 

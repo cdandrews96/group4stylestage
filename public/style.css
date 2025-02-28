@@ -1,21 +1,3 @@
-:root {
-  --color-primary: #3a00ff;
-  --color-primary-alt: #6f6ffd;
-  --color-secondary: #d42257;
-  --color-background: #d2fbf7;
-  --color-text: rgb(64.925, 44.625, 133.875);
-  --color-light: #fff;
-  --color-anchor: #3a00ff;
-  --font-family: "Baloo 2", sans-serif;
-  --font-weight-strong: 500;
-  --font-size-h1: 6rem;
-  --font-size-h2: 3rem;
-  --font-size-h3: 2rem;
-  --font-size-h4: 1.35rem;
-  --font-size-text: 1.15rem;
-  --border-radius: 8px;
-}
-
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -101,6 +83,37 @@ header .container a:nth-child(4) {
 }
 header .container a:nth-child(4) svg {
   display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 5px 15px;
+}
+@media (min-width: 600px) {
+  nav ul {
+    justify-content: center;
+    margin: 5px 2px;
+  }
+}
+nav ul li {
+  background-color: #8C5B30;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+  margin: 5px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+nav ul li:hover, nav ul a:hover {
+  background-color: #401E01;
+  color: #D9A86C;
+}
+nav ul a {
+  text-decoration: none;
+  color: #F2F2F2;
 }
 
 /*# sourceMappingURL=style.css.map */
