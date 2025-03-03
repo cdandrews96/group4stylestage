@@ -1,0 +1,13 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Special+Elite&display=swap');
+
+$heading-font: "Rye", serif;
+$body-font: "Special Elite", serif;
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $heading-font;
+}
