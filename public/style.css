@@ -125,4 +125,10 @@ nav ul a {
   color: #F2F2F2;
 }
 
+body {
+  background-image: url(../sass/images/vintage-paper-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
 /*# sourceMappingURL=style.css.map */
