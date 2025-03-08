@@ -7,15 +7,15 @@ nav {
         margin: 5px 15px;
     
         @include breakpoint(large) {
-            justify-content:center;
+            justify-content: center;
             margin: 5px 2px;
         }
     
         li {
             background-color: $color-primary;
             border-radius: $border-radius;
-            width: 100px;
-            padding: 10px;
+            width: 155px;
+            padding: 13px 10px 10px 10px;
             margin: 5px 10px;
             text-align: center;
             font-size: 18px;
@@ -27,6 +27,7 @@ nav {
         }
     
         a {
+            padding: 15px;
             text-decoration: none;
             color: $color-secondary-alt;
         }
