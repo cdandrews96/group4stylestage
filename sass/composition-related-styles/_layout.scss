@@ -1,7 +1,66 @@
+//Variables
 $break-large: 600px;
+$section-padding: 20px;
 
 @mixin breakpoint($break) {
     @if $break == large {
         @media (min-width: $break-large) { @content; }
+    }
+}
+//Small Screen layout
+body {
+    padding: $section-padding;
+}
+
+body, main, aside {
+    padding: $section-padding;
+}
+
+.page-footer {
+    border-top: 3px $color-primary-alt solid;
+}
+
+
+//Large Screen Layout
+@include breakpoint(large) {
+    body {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+        gap: 20px;
+        padding: $section-padding;
+        margin: 0;
+    }
+
+    header, .skip-link{
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        padding: $section-padding;
+        grid-area: main;
+        border-right: 3px $color-primary-alt solid;
+    }
+
+    aside {
+        grid-area: aside;
+        padding: $section-padding;
+    }
+
+    #styles {
+        padding-top: 300px;
+    }
+
+    .page-footer {
+        grid-area: footer;
     }
 }
