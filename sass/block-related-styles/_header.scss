@@ -18,11 +18,18 @@ header {
             color: black;
         }
 
-        a:nth-child(4) {
+        .link-github {
             text-decoration: none;
             svg {
+                filter: opacity(0%);
                 width: 11px;
                 height: 11px;
+            }
+        }
+
+        a:nth-child(4):hover {
+            svg {
+                filter: opacity(100%);
             }
         }
     }

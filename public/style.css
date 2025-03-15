@@ -132,12 +132,16 @@ header .container p {
 header .container a {
   color: black;
 }
-header .container a:nth-child(4) {
+header .container .link-github {
   text-decoration: none;
 }
-header .container a:nth-child(4) svg {
+header .container .link-github svg {
+  filter: opacity(0%);
   width: 11px;
   height: 11px;
+}
+header .container a:nth-child(4):hover svg {
+  filter: opacity(100%);
 }
 
 nav ul {
@@ -154,28 +158,87 @@ nav ul {
   }
 }
 nav ul li {
-  background-color: #8C5B30;
-  border-radius: 10px;
-  width: 155px;
-  padding: 13px 10px 10px 10px;
   margin: 5px 10px;
   text-align: center;
   font-size: 18px;
 }
-nav ul li:hover, nav ul a:hover {
-  background-color: #401E01;
-  color: #D9A86C;
-}
 nav ul a {
-  padding: 15px;
+  display: inline-block;
+  width: 155px;
+  height: 45px;
+  background-color: #8C5B30;
+  border-radius: 10px;
   text-decoration: none;
   color: #F2F2F2;
+  line-height: 45px;
+}
+nav ul a:hover {
+  background-color: #401E01;
+  color: #D9A86C;
 }
 
 body {
   background-image: url(../sass/images/vintage-paper-background.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
+}
+
+.page-footer {
+  margin: auto 2%;
+}
+.page-footer .container p:nth-child(1) {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .page-footer .container p:nth-child(4) {
+    text-align: center;
+  }
+}
+.page-footer .container a {
+  color: black;
+}
+.page-footer .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 5px 15px;
+}
+@media (min-width: 600px) {
+  .page-footer .container ul {
+    justify-content: center;
+    margin: 5px 2px;
+  }
+}
+.page-footer .container ul li {
+  margin: 5px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.page-footer .container ul li svg {
+  filter: opacity(0%);
+  width: 11px;
+  height: 11px;
+}
+.page-footer .container ul .link-github:hover {
+  color: var(#D9A86C);
+}
+.page-footer .container ul .link-github:hover svg {
+  filter: invert(90%);
+}
+.page-footer .container ul a:hover {
+  background-color: #401E01;
+  color: #D9A86C;
+}
+.page-footer .container ul a {
+  display: inline-block;
+  width: 255px;
+  height: 45px;
+  background-color: #8C5B30;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F2F2F2;
+  line-height: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
