@@ -1,0 +1,11 @@
+#contribute {
+    h2 {
+        text-align: center;
+    }
+
+    ol {
+        li::marker {
+            content: "★";
+        }
+    }
+}

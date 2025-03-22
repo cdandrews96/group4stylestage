@@ -36,16 +36,16 @@
                 font-size: 18px;
         
                 svg {
-                    filter: opacity(0%);
+                    fill: $color-primary;
                     width: 11px;
                     height: 11px;
                 }
             }
 
             .link-github:hover {
-                color: var($color-secondary);
+                color: $color-secondary;
                 svg {
-                    filter: invert(90%);
+                    fill: $color-secondary;
                 }
             }
     

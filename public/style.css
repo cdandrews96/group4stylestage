@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rye&family=Special+Elite&display=swap");
 body {
   font-family: "Special Elite", serif;
@@ -239,6 +240,44 @@ blockquote strong {
     grid-column: 1/2;
   }
 }
+#contribute h2 {
+  text-align: center;
+}
+#contribute ol li::marker {
+  content: "★";
+}
+
+#files .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 10px;
+  justify-items: center;
+}
+#files .container h3 {
+  text-align: center;
+  grid-column: 1/4;
+}
+#files .container .link-downloadcss, #files .container .link-downloadhtml {
+  width: 100%;
+  min-width: 155px;
+  height: 45px;
+  background-color: #8C5B30;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F2F2F2;
+  line-height: 48px;
+}
+#files .container .link-downloadcss:hover, #files .container .link-downloadhtml:hover {
+  background-color: #401E01;
+  color: #D9A86C;
+}
+#files .container .link-codepen {
+  grid-row: 3;
+  grid-column: 1/4;
+}
+
 body {
   background-image: url(../sass/images/vintage-paper-background.jpg);
   background-repeat: no-repeat;
@@ -246,8 +285,7 @@ body {
 }
 
 a {
-  color: #605B56;
-  text-decoration: none;
+  color: black;
 }
 
 a:hover {
@@ -287,15 +325,15 @@ a:hover {
   font-size: 18px;
 }
 .page-footer .container ul li svg {
-  filter: opacity(0%);
+  fill: #8C5B30;
   width: 11px;
   height: 11px;
 }
 .page-footer .container ul .link-github:hover {
-  color: var(#D9A86C);
+  color: #D9A86C;
 }
 .page-footer .container ul .link-github:hover svg {
-  filter: invert(90%);
+  fill: #D9A86C;
 }
 .page-footer .container ul a:hover {
   background-color: #401E01;
