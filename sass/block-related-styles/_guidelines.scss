@@ -1,1 +1,38 @@
+#guidelines {
+    margin-top: 50px;
 
+    .container {
+        h2 {
+            text-align: center;
+        }
+
+        .link-guidelines {
+            display: inline-block;
+            width: 220px;
+            height: 45px;
+            background-color: $color-primary;
+            border-radius: $border-radius;
+            text-decoration: none;
+            color: $color-secondary-alt;
+            line-height: 45px;
+        }
+
+        .link-guidelines {
+            text-align: center;
+            display: block;
+            width: 220px;
+            height: 45px;
+            background-color: $color-primary;
+            border-radius: $border-radius;
+            text-decoration: none;
+            color: $color-secondary-alt;
+            line-height: 45px;
+            margin: 10px auto;
+        }
+
+        .link-guidelines:hover {
+            background-color: $color-primary-alt;
+            color: $color-secondary;
+        }
+    }
+}

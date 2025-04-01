@@ -240,6 +240,42 @@ blockquote strong {
     grid-column: 1/2;
   }
 }
+#guidelines {
+  margin-top: 50px;
+}
+#guidelines .container h2 {
+  text-align: center;
+}
+#guidelines .container .link-guidelines {
+  display: inline-block;
+  width: 220px;
+  height: 45px;
+  background-color: #8C5B30;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F2F2F2;
+  line-height: 45px;
+}
+#guidelines .container .link-guidelines {
+  text-align: center;
+  display: block;
+  width: 220px;
+  height: 45px;
+  background-color: #8C5B30;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F2F2F2;
+  line-height: 45px;
+  margin: 10px auto;
+}
+#guidelines .container .link-guidelines:hover {
+  background-color: #401E01;
+  color: #D9A86C;
+}
+
+#contribute {
+  margin-top: 50px;
+}
 #contribute h2 {
   text-align: center;
 }
@@ -247,6 +283,9 @@ blockquote strong {
   content: "★";
 }
 
+#files {
+  margin-top: 50px;
+}
 #files .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
