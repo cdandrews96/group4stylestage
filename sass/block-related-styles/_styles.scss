@@ -17,21 +17,54 @@ a:hover {
     color: #401E01;
 }
 
+#profile-title {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+#profile-title::before,
+#profile-title::after {
+    content: "★";
+}
+
+.profile {
+
+    ul {
+        list-style-type: none;
+        background-color: $color-primary;
+        color: $color-secondary-alt;
+        border-radius: $border-radius;
+        padding: 10px;
+        text-align: center;
+        line-height: 2em;
+    }
+
+    span {
+        a {
+            color: $color-secondary-alt;
+            text-decoration: none;
+        }
+    }
+}
+
 .features {
     display: flex;
     flex-direction: column;
     gap: 50px;
     list-style: none;
+    padding: 0;
 
     span {
         display: flex;
         flex-direction: column;
+        justify-self: center;
         gap: 5px;
         background-color: $color-primary;
         color: $color-secondary-alt;
-        padding: 5px;
         text-align: center;
         border-radius: $border-radius;
+        padding: 10px;
 
         a {
             text-decoration: none;
@@ -39,10 +72,50 @@ a:hover {
             padding-top: 10px;
         }
     }
+
+    span:hover {
+        background-color: $color-primary-alt;
+    }
 }
 
 #styles {
+
+    h2::before,
+    h2::after {
+        content: "★";
+    }
+
     h2 {
         text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+#styles,
+.profile {
+
+    ul+a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        background-color: $color-primary-alt;
+        color: $color-secondary;
+        border-radius: $border-radius;
+        padding: 10px;
+        margin: 40px;
+    }
+
+    ul+a:hover {
+        background-color: $color-primary;
+        color: $color-secondary-alt;
+    }
+}
+
+
+@include breakpoint(large) {
+    #styles {
+        h2 {
+            margin-top: 175px;
+        }
     }
 }
