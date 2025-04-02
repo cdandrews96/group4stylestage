@@ -292,32 +292,86 @@ a:hover {
   color: #401E01;
 }
 
+#profile-title {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+#profile-title::before,
+#profile-title::after {
+  content: "★";
+}
+
+.profile ul {
+  list-style-type: none;
+  background-color: #8C5B30;
+  color: #F2F2F2;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  line-height: 2em;
+}
+.profile span a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
 .features {
   display: flex;
   flex-direction: column;
   gap: 50px;
   list-style: none;
+  padding: 0;
 }
 .features span {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   gap: 5px;
   background-color: #8C5B30;
   color: #F2F2F2;
-  padding: 5px;
   text-align: center;
   border-radius: 10px;
+  padding: 10px;
 }
 .features span a {
   text-decoration: none;
   color: #F2F2F2;
   padding-top: 10px;
 }
-
-#styles h2 {
-  text-align: center;
+.features span:hover {
+  background-color: #401E01;
 }
 
+#styles h2::before, #styles h2::after {
+  content: "★";
+}
+#styles h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#styles ul + a, .profile ul + a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: #401E01;
+  color: #D9A86C;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 40px;
+}
+#styles ul + a:hover, .profile ul + a:hover {
+  background-color: #8C5B30;
+  color: #F2F2F2;
+}
+
+@media (min-width: 600px) {
+  #styles h2 {
+    margin-top: 175px;
+  }
+}
 .page-footer {
   margin: auto 2%;
 }
